@@ -1,0 +1,344 @@
+:root {
+    --navBlue: #00192c; 
+    --darkBue: #0b193c;
+    --pink: #f91257;
+    --lightGrey: #f8f8f8;
+    --violet: #383cbe;
+    --padding: 80px 0; 
+    --fontFamili: 'Montserrat', sans-serif;
+    --transition: .4s ease;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+
+body {
+    font-family: var(--fontFamili);
+}
+
+ li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover{
+    color: var(--pink);
+    transition: .5s ease;
+}
+button {
+    font-size: 1rem;
+    padding: 20px 30px;
+    background: var(--pink);
+    border: none;
+    color: #fff;
+    border-radius: 40px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    background: var(--violet);
+    transition: .5s ease;
+}
+
+/*****************************************
+******************************************
+                N A V
+******************************************
+******************************************/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: var(--navBlue);
+    align-items: center;
+    padding: 20px 90px;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+nav .logo span {
+    color: var(--pink);
+}
+
+nav ul  {
+    /* display: inline-flex; */
+    display: flex;
+}
+
+nav ul li a {
+    margin-left: 50px;
+}
+
+/*****************************************
+******************************************
+               H E A D E R
+******************************************
+******************************************/
+
+header {
+    background: var(--darkBue);
+    color: #fff;
+    display: flex;
+    /* flex-wrap: wrap; */
+    padding: 70px;
+}
+/* 30min */
+header .col {
+    flex: 1;
+}
+
+header .col:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    align-items: flex-start;
+}
+header .col:last-child {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header .col:first-child h1{
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+header .col:first-child h1 span{
+    color: var(--pink);
+}
+
+header .col:first-child p{
+   padding: 20px 0;
+}
+
+/*****************************************
+******************************************
+               U L I M A T E D
+******************************************
+******************************************/
+
+.ulimited {
+    padding: var(--padding);
+    display: flex;
+}
+
+.ulimited article:first-child {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.ulimited article:last-child {
+    flex: 1;
+}
+
+/*****************************************
+******************************************
+               W O R K S
+******************************************
+******************************************/
+
+.works {
+    background: var(--darkBue);
+    color: #fff;
+    padding: var(--padding);
+    flex-wrap: wrap;
+    
+}
+
+.works .works-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    line-height: 1.4;
+}
+
+.works .works-container article {
+    flex: 0 0 30%;
+}
+.works .works-container article i{
+    color: var(--pink);
+    font-size: 4rem;
+    margin-bottom: 30px;
+}
+
+.works .works-container article h3{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/*****************************************
+******************************************
+                A R T I S T       
+******************************************
+******************************************/
+
+.row {
+    display: flex;
+    margin-top: 40px;
+}
+
+
+.row article:first-child {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row article:last-child {
+    flex: 1;
+}
+
+.col {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.col article  {
+    flex: 0  0 20%;
+}
+.col img {
+    width: 100%;
+    border-radius: 40px;
+}
+
+.col h2 {
+  text-align: center;
+}
+
+/*****************************************
+******************************************
+              F O T E R        
+******************************************
+******************************************/
+
+footer {
+    background: var(--darkBue);
+    padding: 80px;
+    text-align: center;
+    color: beige;
+    margin-top: 100px;
+}
+
+footer p{
+   margin-top: 20px;
+}
+
+
+/*****************************************
+******************************************
+              R E S P O N S I V E       
+******************************************
+******************************************/
+
+@media (max-width: 700px) {
+    
+    
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        background: var(--navBlue);
+        align-items: center;
+        padding: 20px 40px;
+    }
+    
+    nav .logo {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    
+    nav .logo span {
+        color: var(--pink);
+    }
+    
+    nav ul  {
+        /* display: inline-flex; */
+        display: flex;
+    }
+    
+    nav ul li a {
+        margin-left: 30px;
+    }
+
+
+
+
+
+
+    .works {
+        background: var(--darkBue);
+        color: #fff;
+        padding: var(--padding);
+        flex-wrap: wrap;
+        
+    }
+    
+    .works .works-container {
+        display: flex;
+        justify-content: space-between;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .works .works-container article {
+        flex: 0 0 70%;
+
+    }
+    .works .works-container article i{
+        color: var(--pink);
+        font-size: 4rem;
+        margin-bottom: 30px;
+    }
+    
+    .works .works-container article h3{
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+
+
+.col {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.col article  {
+    flex: 0  0 40%;
+    flex-wrap: wrap;
+}
+.col img {
+    width: 100%;
+    border-radius: 40px;
+}
+
+.col h2 {
+  text-align: center;
+}
+}
